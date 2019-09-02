@@ -1,0 +1,130 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator{
+	width: 30%;
+	height: 30%;
+	padding: 10px;
+	min-width: 350px;
+	min-height: 200px;
+	border: 10px inset red;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn{
+	cursor: pointer;
+	font-size: 1rem;
+	border: 1px solid white;
+	outline: none;
+	background-color: white;
+	opacity: .8;
+}
+
+
+.btn:hover{
+	opacity: 1;
+}
+
+.screen{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+
+.screen{
+	width:100%;
+	font-size: 2rem;
+	padding: 0.5rem;
+	background: white;
+	border: 3px inset black;
+	color:black;
+}
+
+.buttons{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	transition: 0.5s linear;
+}
+
+.btn-operate{
+	background: yellow;
+	color: white; 
+}
+
+
+.btn-clear{
+	background: orange;
+}
+
+.btn-equal{
+	background: red;
+}
+
+.btn, .btn-equal, .btn-clear, .btn-operate
+{
+	font-size: 2rem;
+}
+
+
+
+button{
+	flex: 0 0 25%;
+	border: 1px solid black;
+	padding: 0.5rem;
+	transition: all .5s ease;
+}
+
+button:hover{
+	background: green;
+}
+
+.blank{
+	background-color: white;
+	border: none;
+}
+
+.blank:hover{
+	background-color: white;
+}
+
+.quoteBtn{
+	padding: 0.25rem 0.5rem;
+	border: none;
+	border-radius: 5%;
+	color: white;
+	background-color: black;
+	font-size: 2rem;
+	text-transform: capitalize;
+	cursor: pointer;
+	outline: none;
+	transition: .5s;
+}
+
+.quoteBtn:hover{
+	background-color: blue;
+	transition: .5s;
+}
+
+blockquote{
+	margin: 1.5rem;
+	padding: .5rem;
+}
